@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="no1" id="no1">
+        <br><br>
+        <button type="button" onclick="getNo(1)">1</button>
+        <button type="button" onclick="getNo(2)">2</button>
+        <button type="button" onclick="getNo(3)">3</button>
+        <br><br>
+        <button type="button" onclick="getNo(4)">4</button>
+        <button type="button" onclick="getNo(5)">5</button>
+        <button type="button" onclick="getNo(6)">6</button>
+        <br><br>
+        <button type="button" onclick="getNo('+')">+</button>
+        <button type="button" onclick="getNo('-')">-</button>
+        <button type="button" onclick="getAns()">Ans</button>
+
+    </form>
+    <script>
+        let tr = ''
+        function getNo(n){
+            tr += n
+            document.getElementById('no1').value =tr
+        }
+        function getAns(){
+            let a =  document.getElementById('no1').value
+            let ans = eval(a)
+
+            document.getElementById('no1').value = ans
+            tr = ''
+        }
+    </script>
+</body>
+</html>

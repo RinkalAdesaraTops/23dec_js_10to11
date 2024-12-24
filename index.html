@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <script>
+        document.getElementById('demo').innerHTML ="<b>Hello</b>"
+        document.getElementById('demo1').innerText ="<b>Hello</b>"
+        //variable 
+        // 1)Nothing
+        a=10
+        b=20
+        // c=a+b
+        document.write('<br> Addition is '+(a+b))
+        // 2)var keyword -- redeclare & reassign value
+        var str = "hello"
+        var a = 25
+        document.write('<br> String is '+str)
+        var str = 3500
+        document.write('<br> String is '+str)
+        //3)const keyword - cant possible reassign & redeclare
+        const pi = 3.14
+        // const pi =25
+        // 4)let keyword -- cant redeclare but reassign is possible
+        let ab = 25
+        document.write('<br> Ab is '+ab)
+
+        ab=6456
+    </script>
+</body>
+</html>
