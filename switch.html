@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task -- max from 4
+        // switch - 1,2,3,4,5
+        /* 1= add
+        2=minus
+        3= multiplication
+        4= division
+        modulus
+
+
+        */
+         let op = prompt("ENter operator(+,-,*,/,%):")
+        let a = parseInt(prompt("ENter a:")) //"25"
+        let b = parseInt(prompt("ENter b:"))
+        switch(op){               
+            case "+": 
+                    document.write('<br> Addition is '+(a+b)) 
+                    break
+        
+            case "-": 
+                    document.write('<br> Minus is '+(a-b)) 
+                    break
+            case "*": 
+                    document.write('<br> Multiplication is '+(a*b)) 
+                    break
+            case "/": 
+                    document.write('<br> Division is '+(a/b)) 
+                    break
+            default:
+                    document.write('<br> Modulus is '+(a%b));
+                    break;
+
+        }
+        
+    </script>
+</body>
+</html>
