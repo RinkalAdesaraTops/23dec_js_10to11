@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Hi Hello How are you"
+        document.write('<br> length is '+str.length)
+        document.write('<br> Uppercase is '+str.toUpperCase())
+        document.write('<br>Lowercase is '+str.toLowerCase())
+        let str2 = str.slice(2)
+        document.write('<br> String is --- '+str2)
+        str2 = str.slice(2,6)
+        document.write('<br> String is --- '+str2)
+        str2 = str.slice(-6)
+        document.write('<br> String is --- '+str2)
+        str2 = str.slice(-7,-3) //-3
+        document.write('<br> String is --- '+str2)
+        //substr
+        str2 = str.substr(2,6)
+        document.write('<br> String is --- '+str2)
+        let ch1="dfgdfgdfg"
+        let ch2="dfgdfgdfg jkhrjket djkfghreut  dfgh"
+        let newstr = ch1.concat(ch2,"$$$$","@#HGFGF")
+        document.write('<br> '+newstr)
+        let amt = "345"
+        let strnew = amt.padStart("6","Rs") //RsR345
+        document.write('<br> Str is '+strnew)
+        strnew = amt.padEnd("6","Rs") //RsR345
+        document.write('<br> Str is '+strnew)
+        let chr = "            jhgjh jdgfhjdg jgdsfhjs        "
+        document.write('<br> chr is '+chr.length)
+        document.write('<br> chr is '+chr.trim().length)
+        document.write('<br> chr is '+chr.trimStart().length)
+        document.write('<br> chr is '+chr.trimEnd().length) 
+        let a = "abcdf"      
+        document.write('<br> char at is'+a.charAt(3))
+        document.write('<br> char at is'+a.charCodeAt(3))
+        
+    </script>
+</body>
+</html>
