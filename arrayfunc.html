@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[10,20,30,40,50]
+        //array elements
+        //to access elements of array using index start with 0
+        // document.write('<br> '+a[0])
+        // document.write('<br> '+a[2])
+        // document.write('<br> '+a[4])
+        let sum=0
+        for(let i=0;i<5;i++){
+            document.write('<br> '+a[i])
+            sum += a[i]
+        }
+        document.write('<br> Sum is '+sum)
+        a.push(55)
+        document.write('<br> '+a)
+        a.pop()
+        document.write('<br> '+a)
+        a.unshift(44)
+        document.write('<br> '+a)
+        a.shift()
+        document.write('<br> '+a)
+        a[2]=100
+        document.write('<br> '+a)
+        a.splice(2,0,11,22,33,440,55)
+        document.write('<br> '+a)
+        a.splice(3,2,200,233,445,667,778)
+        document.write('<br> '+a)
+        let b = a.slice(1,5)
+        document.write('<br> '+b)
+        let arr2 = [89,90,900,76]
+        let merge_arr = a.concat(arr2)
+        document.write('<br> '+merge_arr)
+        let search = a.includes(2004) //return boolean 
+        document.write('<br> '+search)
+        
+         //return boolean 
+        if(search){
+            document.write('<br> Data found...')            
+        } else {
+            document.write('<br> No Data found...')
+        }
+    //    let arr = ["xyz","dgh","abc","jkl"]
+    //compare function
+    // 10,20,11,200,233,445,667,778,440,9,100,40,50,89,90,900,76
+    let arr1 = ["dgfhdf",23,"xyz",78,"abc",100]
+       document.write('<br>Sorting ASC'+arr1.sort(function(a,b){
+                    return b-a   //10-20=-10 20-11=9
+       }))
+       document.write('<br> Sorting Dsc '+arr1.reverse())
+       
+        
+        
+    </script>
+</body>
+</html>
