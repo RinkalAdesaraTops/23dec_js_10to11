@@ -13,8 +13,8 @@
         document.write('<br>Lowercase is '+str.toLowerCase())
         let str2 = str.slice(2)
         document.write('<br> String is --- '+str2)
-        str2 = str.slice(2,6)
-        document.write('<br> String is --- '+str2)
+        str2 = str.slice(2,-1)
+        document.write('<br> String -1  is --- '+str2)
         str2 = str.slice(-6)
         document.write('<br> String is --- '+str2)
         str2 = str.slice(-7,-3) //-3
@@ -29,7 +29,7 @@
         let amt = "345"
         let strnew = amt.padStart("6","Rs") //RsR345
         document.write('<br> Str is '+strnew)
-        strnew = amt.padEnd("6","Rs") //RsR345
+        strnew = amt.padEnd("6","Rs") //345RsR
         document.write('<br> Str is '+strnew)
         let chr = "            jhgjh jdgfhjdg jgdsfhjs        "
         document.write('<br> chr is '+chr.length)
