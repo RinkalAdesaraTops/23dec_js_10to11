@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" value="Test123">
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <button onclick="disp()">Add</button>
+    <script>
+        document.write('<br> Hello')
+        console.log("Hii")
+        document.getElementById("demo").innerHTML = "<b>Hiii Good Morning</b>"
+        document.getElementById("demo1").innerText = "<b>Hiii Good Morning</b>"
+        //Set value
+        // document.getElementById("username").value="ABCD"
+        //get value from textbox
+        
+        document.getElementById("demo").style.color = "red"
+        document.getElementById("demo").style.backgroundColor = "yellow"
+        // alert("Hello...")
+        function disp(){
+            let a = document.getElementById('username').value
+            document.write('<br> A is '+a)
+        }
+    </script>
+</body>
+</html>
