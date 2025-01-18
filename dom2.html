@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="" value="ABCD">
+    <div>
+        <p class="abc">hello hii</p>
+        <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magni, dignissimos veniam iure aspernatur corrupti, accusamus aliquid necessitatibus hic quo ipsam temporibus delectus beatae, sequi ut. Aliquid cum nemo distinctio.</p>
+        <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut dolorem totam reiciendis repellat, assumenda, debitis vel unde odit corrupti consequatur. Rerum ipsa eaque cupiditate veniam similique adipisci magni! Ducimus facere nulla provident. Perspiciatis blanditiis</p>
+        <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut dolorem totam reiciendis repellat, assumenda, debitis vel unde odit corrupti consequatur. Rerum ipsa eaque cupiditate veniam similique adipisci magni! Ducimus facere nulla provident. Perspiciatis blanditiis</p>
+    </div>
+    <script>
+        let a = document.getElementsByName('username')
+        a[0].style.color='green'
+        // a[0].value="jhfgjh"
+        let b = document.getElementsByClassName('abc')
+        // console.log(b);
+        for(let i=0;i<b.length;i++){
+            if((i+1)%2==0){
+                b[i].style.color='blue'
+            } else {
+                b[i].style.color='red'
+            }
+        }
+//getElementsByTagName
+//querySelector
+//querySelectorAll
+// let c = document.querySelector('p')
+// console.log(c);
+document.querySelector('p').style.backgroundColor='grey'
+let c = document.querySelectorAll('p')
+console.log(c);
+    </script>
+</body>
+</html>

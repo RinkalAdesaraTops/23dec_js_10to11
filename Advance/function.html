@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DOM Example</h3>
+    <div>
+        <input type="text" name="empname" id="empname" value="test123">
+        <p class="abc">test sdkjfh sdjkf</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nemo beatae hic natus obcaecati quam vero modi velit sint pariatur nihil tempora non deleniti rem, dolorem commodi est quisquam debitis.</p>
+        <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ut dolorum maxime. Cupiditate nihil eaque amet soluta eum tempora ipsum labore tenetur ea sequi dolorem animi, praesentium, illum voluptatum deserunt! Laborum sed enim odit quis quas corporis accusantium nihil rem suscipit saepe omnis rerum, obcaecati quidem nulla id quisquam iure nemo dolore iste mollitia dolorum doloremque incidunt unde modi. Laborum architecto amet deserunt sequi inventore recusandae voluptatum maiores.</p>
+    </div>
+    <section>Hellooo</section>
+    <script>
+        let a = document.getElementsByName('empname')
+        console.log(a);
+        a[0].style.color = 'red'
+        let b = document.getElementsByTagName('p')
+        console.log(b);
+        for(let i=0;i<b.length;i++){
+            if((i+1)%2==0){
+                b[i].style.color='green'
+                b[i].style.backgroundColor='grey'
+            } else {
+                b[i].style.color='blue'
+            }
+        }
+        //getElementsByClassName
+        // document.getElementsByName('empname').style.color='red'
+        //querySelector
+        // let ab = document.querySelector('section')
+        // console.log(ab);
+        document.querySelector('p').innerHTML = "AGDGDGD"
+        document.querySelectorAll('p').style.color = "purple"
+        //querySelectorAll 
+    </script>
+</body>
+</html>
