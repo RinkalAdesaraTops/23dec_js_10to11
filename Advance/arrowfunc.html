@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //1)TNRN--- Take nothing return nothing
+       //func declaration
+        const abc =()=>{
+            let a=10
+            let b=20
+            document.write('<br> Addition is '+(a+b))
+        } 
+        //func calling..
+        abc()
+        // 2)TSRN--take something return nothing 
+        const fact = n =>{
+            let mult = 1
+            for(let i=1;i<=n;i++){
+                mult = mult*i
+            }
+            document.write('<br> Factorial is '+mult)
+        }
+       
+        fact(4)
+        //3) TNRS - take nothing return something
+        const pi=3.14
+            let r=2.5
+            // const area = ()=>{
+            //     return pi*r**2
+            // }
+            //fat arrow function
+            const area = ()=> pi*r**2
+        // function area(){
+            
+        //     return pi*r**2
+        // }
+        let ans = area()
+        // document.write('<br> Area of circle is '+ans)
+        document.write('<br> Area of circle is '+area())
+        // 4)Take something return something
+        // function cube(n){
+        //     return n**3
+        // }
+        const cube = (n)=> n**3
+        document.write('<br> Cube is '+(cube(5)))
+        
+    </script>
+</body>
+</html>
