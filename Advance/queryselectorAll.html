@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>hello</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, alias. Illo, magnam iure ipsum error totam facilis? Quo, obcaecati corrupti.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis quidem expedita voluptatibus iste rem ipsam unde assumenda et beatae. Aliquam qui soluta nesciunt a? Debitis sint beatae praesentium illum consequuntur animi modi quibusdam itaque, obcaecati ratione, eum fugit minus odit optio ut a dolore, natus et suscipit. Ea expedita ipsam fugit alias aut rem quos enim dignissimos labore voluptate nihil accusamus nemo nisi.</p>
+        <span>djgh dkgjhkdjfg kjdfghkjdfgh</span>
+    </div>
+    <script>
+        let a = document.querySelectorAll("p")
+        console.log(a);
+        for(let i=0;i<a.length;i++){
+            if((i+1)%2==0){
+                a[i].style.color = 'red'
+
+            } else {
+                a[i].style.color = 'blue'
+
+            }
+        }
+        
+    </script>
+</body>
+</html>
