@@ -6,6 +6,57 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+       
+        // document.write('<br> A is '+a[0])
+        // document.write('<br> A is '+a[1])
+        // document.write('<br> A is '+a[2])
+        //push,pop,unshift,shift,splice,slice,sort & reverse
+        //compare function,concat,includes - boolean value 
+        // let a = []
+        // a[0] = 10
+        // a[1] = 20
+        //for__of loop - array
+        //for__in loop -- key-value -- Object
+        // for(let x in arr){
+        //     document.write('<br> '+x+' is '+arr[x])           
+        // }
+        document.write('<br> -------------------------')
+        //map function
+        //it does not change original array
+        //it will create copy of array    
+        let arr = [10,22,33,44,55,22]
+        let newarr = arr.map((i)=>{
+            console.log("i is "+i);
+            
+                return i*10
+        })
+        document.write('<br> '+arr)
+        document.write('<br> '+newarr)
+        //filter function- searching//includes
+        let search = arr.find((i)=>{
+            return i == 22
+        })
+        //filter -- it always returns array
+        //find -- it always returns single value
+        //includes - true false
+        console.log(search);
+        //reduce && reductRight
+        let num = [10,20,30,40,50]
+        let ans = num.reduceRight((total,i)=>{
+            console.log("total is -- "+total);
+            console.log("i is -- "+i);
+            
+            return [total+i]
+        })
+        console.log("ANswer is "+ans);
+        
+        //foreach
+        num.forEach((i)=>{
+            console.log(i);
+            return i*100
+        })
+        
+    </script>
 </body>
 </html>
