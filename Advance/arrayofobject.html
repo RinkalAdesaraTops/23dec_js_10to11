@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="search" id="search" oninput="searchData(this)" placeholder="search data">
+    <br><br>
+    <select name="sorting" id="sorting" onChange="changeOrder()">
+        <option value="">--Select Order--</option>
+        <option value="1">Asc</option>
+        <option value="2">Desc</option>
+    </select><br>
+    <table border="2" align="center">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+        <tbody id="userdata"></tbody>
+    </table>
+    <script>
+             
+        let users = [
+            {
+                id:1,
+                name:"Test",
+                age:25           
+            },
+            {
+                id:2,
+                name:"sadasd",
+                age:24           
+            },
+            {
+                id:3,
+                name:"Pqrs",
+                age:30           
+            }
+        ]
+        
+        let data = users.map((i)=> i)
+        const changeOrder = ()=>{
+            let order = document.getElementById('sorting').value
+            if(order=='1'){
+                //ascending order
+                users.sort((a,b)=>{
+                    return a.age-b.age
+                })
+            } else if(order=='2'){
+                //descending order
+                users.sort((a,b)=>{
+                    return b.age-a.age
+                })
+            } else {
+                users = data
+            }
+            disp(users)
+        
+        }
+        const disp = (users)=>{
+            let tr = ''   
+            users.map((i)=>{
+            tr += `
+                    <tr>
+                        <td>${i.id}</td>
+                        <td>${i.name}</td>
+                        <td>${i.age}</td>
+                        </tr>`
+            })
+            document.getElementById('userdata').innerHTML = tr
+        }
+        const searchData = (e)=>{
+            let val = e.value
+            let srcData = users.filter((i)=>{
+                if(i.name.includes(val)){
+                    return i
+                }
+            })
+            disp(srcData)
+            
+        }
+        disp(data)
+    </script>
+</body>
+</html>

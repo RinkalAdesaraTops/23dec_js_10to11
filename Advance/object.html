@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = ["gfhfg",34,"dghdf","fdg",25000]
+        let arr = {
+            "name":"test",
+            "age":24,
+            "salary":25000
+        }
+        document.write('<br> Name is '+arr['name'])
+        document.write('<br> Age is '+arr.age)
+        arr.lastname = ''
+        document.write('<br> ------------------<br>')
+        console.log(arr);
+        arr['age']=20
+        delete arr['lastname']
+        for(let x in arr){
+            document.write(x+' is '+arr[x]+'<br>')           
+        }
+        
+
+    </script>
+</body>
+</html>

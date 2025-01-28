@@ -47,7 +47,7 @@
             console.log("total is -- "+total);
             console.log("i is -- "+i);
             
-            return [total+i]
+            return total+i
         })
         console.log("ANswer is "+ans);
         
@@ -56,6 +56,14 @@
             console.log(i);
             return i*100
         })
+        //filter
+        //find
+        //includes
+        let a = [23,344,543,10,34,67,78,82]
+        document.write('<br> Array is '+a.sort((a,b)=>{
+            return a-b
+        }))
+        document.write('<br> Array is '+a.reverse())
         
     </script>
 </body>

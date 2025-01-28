@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <p>Enter Text: <input type="text" id="name" oninput="updateTable()" /></p>
+  <select id="selection" onchange="updateTable()">
+    <option value="">--Select Option--</option>
+    <option value="1">Ascending</option>
+    <option value="2">Descending</option>
+  </select>
+  <table border="2" align="center">
+    <thead>
+      <tr><td>ID</td><td>Name</td><td>Age</td></tr>
+    </thead>
+    <tbody id="userdata"></tbody>
+  </table>
+
+  <script>
+    const obj = [
+      { id: 1, name: "Harsh", age: 21 },
+      { id: 2, name: "Vivek", age: 22 },
+      { id: 3, name: "Devraj", age: 23 },
+    ];
+    const updateTable = () => {
+      const name = document.getElementById("name").value.toLowerCase();
+      const sortOption = document.getElementById("selection").value;
+      const filtered = obj.filter(i => i.name.toLowerCase().includes(name));
+      if (sortOption) filtered.sort((a, b) => sortOption === "1" ? a.age - b.age : b.age - a.age);
+      document.getElementById("userdata").innerHTML = filtered
+        .map(i => `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.age}</td></tr>`)
+        .join("");
+    };
+
+    updateTable();
+  </script>
+</body>
+</html>

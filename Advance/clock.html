@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1">
+        <span id="hours"></span> : 
+        <span id="minutes"></span> : 
+        <span id="seconds"></span>
+    </div>
+    <script>
+        document.getElementById('demo').innerHTML = "Hello.."
+        setTimeout(()=>{
+            document.getElementById('demo').innerHTML = "Good Morning..."
+        },3000)
+        //setTimeout - execution delay
+        //setInterval
+        
+        let seconds = 0
+        let minutes = 0
+        setInterval(()=>{
+            seconds += 1
+            document.getElementById('seconds').innerHTML = seconds
+            if(seconds>= 10){
+                minutes+=1
+                document.getElementById('minutes').innerHTML = minutes
+                seconds =0
+            }
+        },1000)
+
+
+    </script>
+</body>
+</html>
