@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["shdgfsd","tyt","apple","nfghj","ruyitu"]
+        let arr2 = ["test","pert","dhggf"]
+        //merging
+        //...spread
+        let merge_arr = [...arr,...arr2]
+        document.write('<br> '+merge_arr)
+        let str2 = arr.concat(arr2)
+        document.write('<br> '+str2)
+        // const [a,b,c,d,e] = arr
+        // document.write('<br> A is '+a)
+        // document.write('<br> E is '+e)
+
+        const [a,b,...c] = arr
+        // Rest of operator
+        document.write('<br> A is '+a)
+        document.write('<br> b is '+b)
+        document.write('<br> c is '+c)
+        const emp = {
+            name:"testt",
+            age:"25",
+            salary:25000
+        }
+        const {a1,b1,c1} = emp
+        const {name,age,salary} = emp
+</script>
+</body>
+</html>
