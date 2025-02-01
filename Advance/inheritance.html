@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{ //parent base super class
+            constructor(){
+                console.log("parent class called..");
+                this.p = 10
+            }
+            cube(){
+                document.write('<br> Cube is '+(this.p**3))              
+            }
+            disp(){
+                document.write('<br> parent disp called..')
+                
+            }
+        }
+        class xyz extends abc{ //child derived sub class
+            constructor(){
+                super()
+               console.log("child class called..");             
+                this.a=56
+                this.b = 3
+            }
+            disp(){
+               
+                document.write('<br> child disp-- '+(this.a%this.b))  
+                super.disp()            
+            }
+        }
+        let obj = new xyz()
+        obj.disp()
+        obj.cube()
+        //polymorphism - one name multiple form
+        //data abstraction - hiding & encapsulation - wrapping up of data into single unit
+    </script>
+</body>
+</html>
