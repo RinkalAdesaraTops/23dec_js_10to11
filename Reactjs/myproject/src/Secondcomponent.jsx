@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Button } from '@mui/material'
 const Secondcomponent = () => {
     let arr = [10,20,30,40,50]
     let data = arr.map((i,index)=> <li key={index}>{i}</li> )
@@ -13,6 +13,9 @@ const Secondcomponent = () => {
             arr.map((i)=> <li>{i}</li> )
         } */}
       </ul>
+      <Button variant="text">Text</Button>
+<Button variant="contained">Contained</Button>
+<Button variant="outlined">Outlined</Button>
     </div>
   )
 }
