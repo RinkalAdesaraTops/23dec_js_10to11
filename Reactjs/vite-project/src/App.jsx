@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Firstcomponent from './Firstcomponent'
 import Secondcomponent from './Secondcomponent'
+import Classcomponent from './Classcomponent'
 
 function App() {
  let name = "Test"
@@ -13,7 +14,8 @@ function App() {
    <div>
     <h3>Hello</h3> 
     {/* <Firstcomponent myname={name} age={age} myarr={arr}/> */}
-    <Secondcomponent />
+    {/* <Secondcomponent /> */}
+    <Classcomponent name="test"/>
    </div>
   )
 }
