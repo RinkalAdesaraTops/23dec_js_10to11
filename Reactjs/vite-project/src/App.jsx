@@ -5,6 +5,10 @@ import './App.css'
 import Firstcomponent from './Firstcomponent'
 import Secondcomponent from './Secondcomponent'
 import Classcomponent from './Classcomponent'
+import LifecycleClass from './LifecycleClass'
+import LifecycleFunction from './LifecycleFunction'
+import Crud from './Crud'
+import Usercrud from './Usercrud'
 
 function App() {
  let name = "Test"
@@ -15,7 +19,11 @@ function App() {
     <h3>Hello</h3> 
     {/* <Firstcomponent myname={name} age={age} myarr={arr}/> */}
     {/* <Secondcomponent /> */}
-    <Classcomponent name="test"/>
+    {/* <Classcomponent name="test"/> */}
+    {/* <LifecycleClass /> */}
+    {/* <LifecycleFunction /> */}
+    {/* <Crud /> */}
+    <Usercrud />
    </div>
   )
 }
