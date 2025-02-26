@@ -5,8 +5,8 @@ const Usercrud = () => {
         name:"",
         age:""
     })
-    const [id,setId] = useState('')
     const [alldata,setAllData] = useState([])
+    const [id,setId] = useState('')
     const handleChange  = (e)=>{
         // let nm = e.target.name
         // let val = e.target.value
@@ -20,7 +20,7 @@ const Usercrud = () => {
         e.preventDefault()
         if(id!=''){
             let res = alldata.map((i,index)=>{
-                if(index==id){
+                if(index == id){
                     i = data
                 }
                 return i
@@ -37,18 +37,17 @@ const Usercrud = () => {
             name:'',
             age:''
         })
-        setId('')
+       setId('')
     }
     const delData = (id)=>{
-        //1 2  4 5 = 3
         let res = alldata.filter((i,index)=>{
-                return index!=id
+            return index != id
         })
         setAllData(res)
     }
     const editData = (id)=>{
         let res = alldata.find((i,index)=>{
-            return index==id
+            return index == id
         })
         setData(res)
         setId(id)
@@ -82,7 +81,7 @@ const Usercrud = () => {
                             <td>{i.age}</td>
                             <td>
                             <button onClick={()=>editData(index)}>Edit</button>
-                                <button onClick={()=>delData(index)}>Delete</button>
+                            <button onClick={()=>delData(index)}>Delete</button>
                             </td>
                         </tr>
                     )

@@ -25,7 +25,6 @@ class LifecycleClass extends Component {
     }
     shouldComponentUpdate(){
         console.log("shouldComponentUpdate");
-        
         return true
     }
     getSnapshotBeforeUpdate(prevProps,prevState){
@@ -34,12 +33,10 @@ class LifecycleClass extends Component {
         return null
     }
     componentDidUpdate(){
-        console.log("Finally updated...");
-        
+        console.log("Finally updated...");       
     }
     render() {
-        console.log("render called..");
-        
+        console.log("render called..");        
         return (
             <>
                 <div>
