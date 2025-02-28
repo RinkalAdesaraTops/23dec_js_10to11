@@ -19,17 +19,19 @@ import Contact2 from './Contact2'
 import UseRefExample from './Hooks/UseRefExample'
 import DataExample from './Hooks/DataExample'
 import UseContextEx from './Hooks/UseContextEx'
+import UseCallback from './Hooks/UseCallback'
 
 function App() {
- let name = "Test"
- let age = 26
- let arr = [10,20,30,40,50]
+//  let name = "Test"
+//  let age = 26
+//  let arr = [10,20,30,40,50]
   return (
    <div>
-    <h3>Hello</h3> 
-    <Menu />
+    <UseCallback />
+    {/* <h3>Hello</h3>  */}
+    {/* <Menu /> */}
     {/* <BrowserRouter> */}
-    <Routes>
+    {/* <Routes>
         <Route path='/home' element={<Home />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}>
@@ -38,10 +40,10 @@ function App() {
         </Route>
 
 
-    </Routes>
+    </Routes> */}
     {/* <UseRefExample /> */}
     {/* <DataExample /> */}
-    <UseContextEx />
+    {/* <UseContextEx /> */}
     {/* </BrowserRouter> */}
     {/* <Firstcomponent myname={name} age={age} myarr={arr}/> */}
     {/* <Secondcomponent /> */}
