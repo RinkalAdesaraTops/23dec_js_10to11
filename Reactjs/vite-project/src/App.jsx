@@ -20,6 +20,7 @@ import UseRefExample from './Hooks/UseRefExample'
 import DataExample from './Hooks/DataExample'
 import UseContextEx from './Hooks/UseContextEx'
 import UseCallback from './Hooks/UseCallback'
+import UseMemoExample from './Hooks/UseMemoExample'
 
 function App() {
 //  let name = "Test"
@@ -27,7 +28,7 @@ function App() {
 //  let arr = [10,20,30,40,50]
   return (
    <div>
-    <UseCallback />
+    {/* <UseCallback /> */}
     {/* <h3>Hello</h3>  */}
     {/* <Menu /> */}
     {/* <BrowserRouter> */}
@@ -52,6 +53,7 @@ function App() {
     {/* <LifecycleFunction /> */}
     {/* <Crud /> */}
     {/* <Usercrud /> */}
+    <UseMemoExample />
    </div>
   )
 }
