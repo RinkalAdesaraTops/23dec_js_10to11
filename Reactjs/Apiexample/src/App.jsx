@@ -6,6 +6,9 @@ import './App.css'
 import Message from './Message'
 import FakeApiExample from './FakeApiExample'
 import ApiCRUD from './ApiCRUD'
+import UseRefExample from './UseRefExample'
+import CustomHookEx from './CustomHookEx'
+import CounterRedux from './CounterRedux'
 // import Contact from './Contact'
 const Home = lazy(()=>import('./Home'))
 const Contact = lazy(()=>import('./Contact'))
@@ -20,7 +23,10 @@ function App() {
       <Home />
     </Suspense> */}
     {/* <FakeApiExample /> */}
-    <ApiCRUD />
+    {/* <ApiCRUD /> */}
+    {/* <UseRefExample /> */}
+    {/* <CustomHookEx /> */}
+    <CounterRedux />
     </>
   )
 }
