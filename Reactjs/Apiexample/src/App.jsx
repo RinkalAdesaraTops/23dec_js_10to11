@@ -9,6 +9,7 @@ import ApiCRUD from './ApiCRUD'
 import UseRefExample from './UseRefExample'
 import CustomHookEx from './CustomHookEx'
 import CounterRedux from './CounterRedux'
+import UserReduxCrud from './UserReduxCrud'
 // import Contact from './Contact'
 const Home = lazy(()=>import('./Home'))
 const Contact = lazy(()=>import('./Contact'))
@@ -26,7 +27,8 @@ function App() {
     {/* <ApiCRUD /> */}
     {/* <UseRefExample /> */}
     {/* <CustomHookEx /> */}
-    <CounterRedux />
+    {/* <CounterRedux /> */}
+    <UserReduxCrud />
     </>
   )
 }
