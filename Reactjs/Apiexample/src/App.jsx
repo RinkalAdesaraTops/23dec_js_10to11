@@ -10,6 +10,7 @@ import UseRefExample from './UseRefExample'
 import CustomHookEx from './CustomHookEx'
 import CounterRedux from './CounterRedux'
 import UserReduxCrud from './UserReduxCrud'
+import RTKCounter from './RTKCounter'
 // import Contact from './Contact'
 const Home = lazy(()=>import('./Home'))
 const Contact = lazy(()=>import('./Contact'))
@@ -28,7 +29,8 @@ function App() {
     {/* <UseRefExample /> */}
     {/* <CustomHookEx /> */}
     {/* <CounterRedux /> */}
-    <UserReduxCrud />
+    {/* <UserReduxCrud /> */}
+    <RTKCounter />
     </>
   )
 }
